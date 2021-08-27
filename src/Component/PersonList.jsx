@@ -8,6 +8,17 @@ export default class PersonList extends React.Component{
 
 
     componentDidMount() { 
-        axios.get();
+        axios.get(`https://jsonplaceholder.typicode.com/users`)
+        .then(res => {
+            this.setState({person: res.data});
+        })
     }
+
+render() { 
+    return (
+        
+    )
+}
+
+
 }

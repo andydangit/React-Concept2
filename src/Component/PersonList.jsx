@@ -1,11 +1,13 @@
+import axios from 'axios';
 import React from 'react'
 
-function PersonList() {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+export default class PersonList extends React.Component{
+    state = {
+        persons:[],
+    };
 
-export default PersonList
+
+    componentDidMount() { 
+        axios.get();
+    }
+}

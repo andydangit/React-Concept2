@@ -26,10 +26,10 @@ handleSubmit = e => {
 
   render() {
     return (
-<form>
+<formo onSubmit ={this.handleSubmit}>
     <label>
         Person Name: 
-        <input type="text" name="name" />
+        <input type="text" name="name" onChange={this.handleChange} />
     </label>
 </form>
     );

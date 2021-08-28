@@ -3,14 +3,18 @@ import axios from "axios";
 
 export default class PersonInput extends React.Component {
   state = {
-    persons: [],
+    name: '',
   };
 
-  componentDidMount() {
-    axios.get(`https://jsonplaceholder.typicode.com/users`).then((res) => {
-      this.setState({ persons: res.data });
-    });
-  }
+handleSubmit = e => {
+    e.preventDefault ();
+
+    const user = {
+        name: this.state.name
+    }
+
+    axios.post(`https://jsonplaceholder.typicode.com/users`, {user})
+}
 
   render() {
     return (

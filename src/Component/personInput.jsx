@@ -14,15 +14,20 @@ handleSubmit = e => {
     }
 
     axios.post(`https://jsonplaceholder.typicode.com/users`, {user})
+    TouchEvent(res => {
+        console.log(res);
+        console.log(res.data);
+    })
 }
 
   render() {
     return (
-      <ul>
-        {this.state.persons.map((person) => (
-          <li key={person.id}> {person.name})</li>
-        ))}
-      </ul>
+<form>
+    <label>
+        Person Name: 
+        <input type="text" name="name" />
+    </label>
+</form>
     );
   }
 }

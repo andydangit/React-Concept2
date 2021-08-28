@@ -6,6 +6,10 @@ export default class PersonInput extends React.Component {
     name: '',
   };
 
+  handleChange = e => {
+      this.setState ({ name: e.target.value })
+  }
+
 handleSubmit = e => {
     e.preventDefault ();
 

@@ -1,5 +1,6 @@
 import React from "react";
 import '../MyInfo/MyInfo.css'
+import Skill from "../Skill/Skill";
 
 function MyInfo() {
   return (
@@ -8,11 +9,8 @@ function MyInfo() {
       <p>
         I'm going to be a <strong>S</strong>oftware <strong>D</strong>eveloper
       </p>
-      <ul>
-        <li> FrontEnd</li>
-        <li> BackEnd</li>
-        <li> Python</li>
-      </ul>
+      
+      <Skill /> 
     </div>
   );
 }

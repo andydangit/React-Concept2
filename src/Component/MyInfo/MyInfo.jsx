@@ -23,7 +23,7 @@ function MyInfo() {
       <p>
         I'm going to be a <strong>S</strong>oftware <strong>D</strong>eveloper
       </p>
-      <p> it is about {date.getHours() % 12} o'clock and it is {timeOfDay} time; get to practice coding</p>
+      <p> it is about {date.getHours() % 12} o'clock and it is <strong style={{color: "#ff8c00"}}> {timeOfDay} </strong> time; get to practice coding</p>
       
       <Skill /> 
     </div>

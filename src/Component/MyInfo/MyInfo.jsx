@@ -5,6 +5,17 @@ import Skill from "../Skill/Skill";
 function MyInfo() {
 
     const date = new Date()
+    const hours = date.getHours()
+
+    let timeOfDay
+  
+    if (hours < 12) {
+      timeOfDay = "morning"
+    } else if (hours >= 12 && hours < 17) {
+      timeOfDay = "afternoon"
+    } else {
+      timeOfDay = "night"
+    }
 
   return (
     <div>
@@ -12,7 +23,7 @@ function MyInfo() {
       <p>
         I'm going to be a <strong>S</strong>oftware <strong>D</strong>eveloper
       </p>
-      <p> it is about {date.getHours() % 12} o'clock; get to practice coding</p>
+      <p> it is about {date.getHours() % 12} o'clock and it is {timeOfDay} time; get to practice coding</p>
       
       <Skill /> 
     </div>

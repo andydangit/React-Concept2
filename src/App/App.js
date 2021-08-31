@@ -3,26 +3,19 @@ import MyInfo from "../Component/MyInfo/MyInfo";
 import Footer from "../Component/Footer/Footer";
 import Checkbox from "../Component/CheckBox/CheckBox";
 import Joke from "../Component/Joke/Joke";
+import JokeData from "../Data/JokeData/JokeData";
 
 function App() {
+  const jokeComponents = JokeData.map((joke) => (
+    <Joke key={joke} question={joke.question} punchLine={joke.punchLine} />
+  ));
+
   return (
     <div className="App">
       <MyInfo />
       <Checkbox />
-      <Joke jokes={{ punchline: "None, becuase it's a hardware problem" }} />
+      {jokeComponents}
 
-      <Joke
-        jokes={{
-          question: "What's the best thing about Switzerland?",
-          punchline: "I don't know, but the flag is a big plus!",
-        }}
-      />
-      <Joke
-        jokes={{
-          question: "Hear about the new restaurant called Karma?",
-          punchline: "There's no menu: you get what you deserve",
-        }}
-      />
       <Footer />
     </div>
   );

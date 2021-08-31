@@ -5,11 +5,11 @@ function Joke(props) {
   return (
     <>
     <hr/>
-      <h5 style={{ display: props.jokes.question ? "block" : "none" }}>
+      <h5 style={{ display: props.question? "block" : "none" }}>
 
-        Question: {props.jokes.question}
+        Question: {props.question}
       </h5>
-      <p> Answer: {props.jokes.punchline} </p>
+      <p> Answer: {props.punchLine} </p>
       <hr/> 
     </>
   );

@@ -10,7 +10,7 @@ function App() {
       <MyInfo />
       <Checkbox />
       <Joke jokes={{ punchline: "None, becuase it's a hardware problem" }} />
-      
+
       <Joke
         jokes={{
           question: "What's the best thing about Switzerland?",
@@ -20,7 +20,7 @@ function App() {
       <Joke
         jokes={{
           question: "Hear about the new restaurant called Karma?",
-          punchline: "THere's no menu: you get what you deserve",
+          punchline: "There's no menu: you get what you deserve",
         }}
       />
       <Footer />

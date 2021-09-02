@@ -19,7 +19,7 @@ class test extends React.Component {
       studyHard = "Keep working at it ";
     }
 
-    return <>The door of opportunity {studyHard}</>;
+    return <>The door of opportunity equal {studyHard}</>;
   }
 }
 

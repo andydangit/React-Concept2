@@ -4,6 +4,7 @@ import Footer from "../Component/Footer/Footer";
 import Checkbox from "../Component/CheckBox/CheckBox";
 import Joke from "../Component/Joke/Joke";
 import JokeData from "../Data/JokeData/JokeData";
+import Test from '../Test/test'
 
 function App() {
   const jokeComponents = JokeData.map((joke) => (
@@ -17,6 +18,8 @@ function App() {
       {jokeComponents}
 
       <Footer />
+
+      <Test /> 
     </div>
   );
 }
